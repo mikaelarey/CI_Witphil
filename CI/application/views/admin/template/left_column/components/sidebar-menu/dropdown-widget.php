@@ -1,14 +1,16 @@
             <!-- Dropdown with widget-->
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-files-o"></i>
-                <span>Layout Options</span>
-                <span class="label label-danger pull-right">4</span>
+                <i class="<?php echo $menu_icon; ?>"></i>
+                <span><?php echo $menu_name; ?></span>
+                <span class="label label-danger pull-right"><?php echo $menu_number; ?></span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                <?php foreach($sub_menu as $menu):?>
+                    <li><a href="<?php echo $menu['link'];?>">
+                    <i class="<?php echo $menu['icon'];?>"></i> <?php echo $menu['name'];?>
+                    <span class="label label-danger pull-right"><?php echo $menu['menu_number'];?></span>
+                    </a></li>
+                <?php endforeach; ?>
               </ul>
             </li>

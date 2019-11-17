@@ -1,5 +1,5 @@
             <li>
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                <i class="<?php echo $menu_icon; ?>"></i> <span><?php echo $menu_name; ?></span>
               </a>
             </li>
