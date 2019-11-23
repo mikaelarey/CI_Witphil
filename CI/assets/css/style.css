@@ -99,7 +99,7 @@ ul {list-style-type: none;}
     transition:0.5s;
 }
 .card-hover:hover {
-    transform:scale(1.1);
+    transform:scale(1.02);
     box-shadow:1px 1px 5px 2px grey;
     transition:0.5s;
 }

@@ -4,12 +4,10 @@ class Home extends CI_Controller {
 
     public function index() {
 
-        $this->load->view('home/index');
+        $data['page'] = "home/main";
+        $data['title'] = "Home Page";
+        $this->load->view('home/template/main', $data);
 
-    }
-
-    public function test() {
-        echo "this is a test page";
     }
 
 }
