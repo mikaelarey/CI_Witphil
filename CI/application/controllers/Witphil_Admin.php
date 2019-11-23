@@ -25,7 +25,23 @@ class Witphil_Admin extends CI_Controller {
 
         $data['title'] = 'Admin Dashboard';
         $data['content_header'] = 'Dashboard';
-        $data['page'] = 'Dashboard';
+        $data['page'] = 'dashboard';
+
+        if ($this->is_logged_in()) {
+            $this->load->view('admin/template/main', $data);
+        }
+
+        else {
+            echo "You are not logged in";
+        }
+
+    }
+
+    public function home() {
+
+        $data['title'] = 'Admin Dashboard';
+        $data['content_header'] = 'Home Page Settings';
+        $data['page'] = 'home';
 
         if ($this->is_logged_in()) {
             $this->load->view('admin/template/main', $data);

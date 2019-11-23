@@ -8,7 +8,8 @@
             <?php 
               $menu_data = [
                 'menu_name' => 'Dashboard',
-                'menu_icon' => 'fa fa-dashboard'
+                'menu_icon' => 'fa fa-dashboard',
+                'link' => base_url() . 'Witphil_Admin'
               ];
 
               $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
@@ -213,7 +214,8 @@
             <?php 
               $menu_data = [
                 'menu_name' => 'Home',
-                'menu_icon' => 'fa fa-home'
+                'menu_icon' => 'fa fa-home',
+                'link' => base_url() . 'Witphil_Admin/home'
               ];
 
               $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
