@@ -219,6 +219,41 @@
               $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
             ?>
 
+
+            <!-- Article -->
+            <!-- standard -->
+            <?php 
+              $menu_data = [
+                'menu_name' => 'Article',
+                'menu_icon' => 'fa fa-pencil-square-o'
+              ];
+
+              $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
+            ?>
+
+            
+            <!-- Dining -->
+            <!-- standard -->
+            <?php 
+              $menu_data = [
+                'menu_name' => 'Dining',
+                'menu_icon' => 'fa fa-building'
+              ];
+
+              $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
+            ?>
+
+            <!-- Events -->
+            <!-- standard -->
+            <?php 
+              $menu_data = [
+                'menu_name' => 'Events',
+                'menu_icon' => 'fa fa-file'
+              ];
+
+              $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
+            ?>
+
             <!-- About -->
             <!-- standard -->
             <?php 
@@ -230,16 +265,7 @@
               $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
             ?>
 
-            <!-- Services -->
-            <!-- standard -->
-            <?php 
-              $menu_data = [
-                'menu_name' => 'Services',
-                'menu_icon' => 'fa fa-server'
-              ];
-
-              $this->load->view('admin/template/left_column/components/sidebar-menu/standard', $menu_data); 
-            ?>
+            
   
 
             

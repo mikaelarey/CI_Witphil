@@ -1,6 +1,6 @@
 <?php
 
-class Admin extends CI_Controller {
+class Witphil_Admin extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
@@ -23,9 +23,9 @@ class Admin extends CI_Controller {
 
     public function index() {
 
-        $data = array(
-            'title' => 'Admin Dashboard'
-        );
+        $data['title'] = 'Admin Dashboard';
+        $data['content_header'] = 'Dashboard';
+        $data['page'] = 'Dashboard';
 
         if ($this->is_logged_in()) {
             $this->load->view('admin/template/main', $data);
